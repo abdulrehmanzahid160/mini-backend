@@ -10,7 +10,7 @@ The smallest possible backend: a Flask server with two JSON endpoints.
 ## Run it
 
 ```bash
-pip install flask
+pip install -r requirements.txt
 python3 app.py
 ```
 
@@ -25,3 +25,11 @@ curl http://127.0.0.1:5000/time
 ```
 
 **Browser:** open `http://127.0.0.1:5000/health` or `http://127.0.0.1:5000/time` directly.
+
+## Run the tests
+
+```bash
+pytest -q
+```
+
+The tests use Flask's built-in test client, so no running server is needed.
